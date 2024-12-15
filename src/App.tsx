@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import { UserInfoWithLogger } from "./patterns/hoc/logProps";
 import { CardWithUserData } from "./patterns/playground/Card";
+import { CardWithHook } from "./patterns/playground/CardWithHook";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -33,6 +34,7 @@ function App() {
 
       <UserInfoWithLogger test="This is a test" />
       <CardWithUserData />
+      <CardWithHook />
     </>
   );
 }
