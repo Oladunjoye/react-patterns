@@ -13,6 +13,7 @@ import {
   GreenSmallButton,
   RedButton,
 } from "./patterns/composition/composition";
+import { GreenSmallPartialComponentButton } from "./patterns/composition/partialComponent";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -46,6 +47,7 @@ function App() {
       <RecursiveComponent data={nestedObject} />
       <RedButton size={"md"} text={"Hi Red Button"} />
       <GreenSmallButton text={"Hello Green Button"} />
+      <GreenSmallPartialComponentButton text={"Hello Green Button"} />
     </>
   );
 }
