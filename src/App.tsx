@@ -9,6 +9,10 @@ import {
   nestedObject,
   RecursiveComponent,
 } from "./patterns/recursion/Recursive";
+import {
+  GreenSmallButton,
+  RedButton,
+} from "./patterns/composition/composition";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -40,6 +44,8 @@ function App() {
       <CardWithUserData />
       <CardWithHook />
       <RecursiveComponent data={nestedObject} />
+      <RedButton size={"md"} text={"Hi Red Button"} />
+      <GreenSmallButton text={"Hello Green Button"} />
     </>
   );
 }
