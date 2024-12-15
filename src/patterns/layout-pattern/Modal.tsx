@@ -12,6 +12,7 @@ const ModalBackground = styled.div`
   background-color: rgba(0, 0, 0, 0.27);
   left: 0;
   top: 0;
+  cursor: pointer;
 `;
 
 const ModalContent = styled.div`
@@ -19,6 +20,7 @@ const ModalContent = styled.div`
   padding: 24px;
   margin: 12% auto;
   background-color: wheat;
+  cursor: pointer;
 `;
 export const Modal = ({ children }: ModalProps) => {
   const [show, setShow] = useState(false);
