@@ -5,6 +5,10 @@ import "./App.css";
 import { UserInfoWithLogger } from "./patterns/hoc/logProps";
 import { CardWithUserData } from "./patterns/playground/Card";
 import { CardWithHook } from "./patterns/playground/CardWithHook";
+import {
+  nestedObject,
+  RecursiveComponent,
+} from "./patterns/recursion/Recursive";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,6 +39,7 @@ function App() {
       <UserInfoWithLogger test="This is a test" />
       <CardWithUserData />
       <CardWithHook />
+      <RecursiveComponent data={nestedObject} />
     </>
   );
 }
