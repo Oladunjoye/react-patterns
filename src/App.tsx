@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { UserInfoWithLogger } from "./patterns/hoc/logProps";
+import { CardWithUserData } from "./patterns/playground/Card";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -31,6 +32,7 @@ function App() {
       </p>
 
       <UserInfoWithLogger test="This is a test" />
+      <CardWithUserData />
     </>
   );
 }
